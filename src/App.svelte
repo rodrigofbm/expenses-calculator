@@ -5,6 +5,7 @@
   import Title from './Title.svelte';
   import ExpensesList from './ExepensesList.svelte';
   import Totals from './Totals.svelte';
+  import ExpenseForm from './ExpenseForm.svelte';
   // data
   import expensesData from './expenses.js';
   // variables
@@ -24,6 +25,7 @@
 
 <Navbar />
 <main class="content">
+  <ExpenseForm />
   <Totals title="total expenses" {total} />
   <ExpensesList {expenses} />
   <button 
